@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo_text = () => {
+const LogoText = () => {
     return (
         <div>
             <div className="firstLogoText">Cthulhu</div>
@@ -9,4 +9,4 @@ const Logo_text = () => {
     )
 }
 
-export default Logo_text;
+export default LogoText;

@@ -23,7 +23,6 @@
           animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
   height: calc(2 * var(--logo-width));
   pointer-events: none;
-  overflow: hidden;
 }
 
 .App-header {

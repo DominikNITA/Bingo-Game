@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Logo_image = () => {
+const LogoImage = () => {
     return (
         <div>logo</div>
     )
 }
 
-export default Logo_image;
+export default LogoImage;
