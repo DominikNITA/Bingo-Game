@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAA;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAEtB;;AAEH,AAAA,cAAc,CAAA;EACZ,KAAK,ECXM,IAAI;CDYhB;;AAED,AAAA,eAAe,CAAA;EACb,KAAK,ECdO,GAAG;CDehB",
+    "sources": [
+        "LandingPage.scss",
+        "../utilities/variables.scss"
+    ],
+    "names": [],
+    "file": "LandingPage.css"
+}

@@ -1,33 +1,98 @@
-.App {
-  text-align: center;
+#root {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100vw;
+  max-height: 100vh;
+  --logo-width: 35vmin;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App {
+  text-align: center;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-sign {
+  position: absolute;
+  top: calc(100vh - var(--logo-width));
+  right: calc(-1 * var(--logo-width));
+  -webkit-animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
+          animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
+  height: calc(2 * var(--logo-width));
   pointer-events: none;
+  overflow: hidden;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ddceae;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
+  position: relative;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@-webkit-keyframes App-sign-spin {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
+
+@keyframes App-sign-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes App-sign-appear {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes App-sign-appear {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=App.css.map */

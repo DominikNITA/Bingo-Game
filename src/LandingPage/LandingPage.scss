@@ -1,0 +1,17 @@
+@import "../../src/utilities/variables.scss";
+
+.Logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+.firstLogoText{
+  color: $firstColor;
+}
+
+.secondLogoText{
+  color: $secondColor;
+}
