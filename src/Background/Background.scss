@@ -1,0 +1,25 @@
+@import "../../src/utilities/variables.scss";
+
+.sign {
+    $sign-appear-duration: 1s;
+    position: absolute;
+    top: calc(100% - #{$bannerWidth});
+    right: calc(-1 * #{$bannerWidth});
+    animation: App-sign-spin infinite 20s linear $sign-appear-duration, App-sign-appear $sign-appear-duration;
+    height: calc(2 * #{$bannerWidth});
+    pointer-events: none;
+}
+
+.right-banner, .left-banner {
+    width: $bannerWidth;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-banner{
+    margin-left: 20px;
+}
+
+.left-banner{
+    margin-right: 20px;
+}
