@@ -1,4 +1,4 @@
-
+@import "./utilities/variables.scss";
 
 #root{
     padding: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
     max-width: 100vw;
     max-height: 100vh;
-    --logo-width: 35vmin;
+    --sign-width: 35vmin;
   }
 
   .App {
@@ -19,16 +19,17 @@
   .App-sign {
     $sign-appear-duration: 1s;
     position: absolute;
-    top: calc(100vh - var(--logo-width));
-    right: calc(-1 * var(--logo-width));
+    top: calc(100% - var(--sign-width));
+    right: calc(-1 * var(--sign-width));
     animation: App-sign-spin infinite 20s linear $sign-appear-duration, App-sign-appear $sign-appear-duration;
-    height: calc(2 * var(--logo-width));
+    height: calc(2 * var(--sign-width));
     pointer-events: none;
   }
 
-  .App-header {
-    background-color: #ddceae;
+  .content {
+    background-color: $backgroundColor;
     min-height: 100vh;
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;

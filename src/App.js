@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import logo from './latest.svg';
+import sign from './latest.svg';
 import './App.css';
 import './LandingPage/Logo'
 import Logo from './LandingPage/Logo';
+import Menu from './LandingPage/Menu';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-sign" alt="logo" />
+        <header className="content">
+          <img src={sign} className="App-sign" alt="sign" />
           <Logo/>
+          <Menu/>
         </header>
       </div>
     );

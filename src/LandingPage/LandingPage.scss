@@ -1,17 +1,64 @@
 @import "../../src/utilities/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Kodchasan|Permanent+Marker');
 
-.Logo{
+.logo-container{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
+  min-height: 80%;
   }
+
+.logo-text-container{
+  font-size: 5em;
+  line-height: 1em;
+  width: max-content;
+  user-select: none;
+}
 
 .firstLogoText{
   color: $firstColor;
+  font-family: 'Permanent Marker', cursive;
+  position: relative;
+  overflow: visible;
 }
 
 .secondLogoText{
   color: $secondColor;
+  font-size: 0.80em;
+  text-align: right;
+  font-family: 'Kodchasan', sans-serif;
+  animation: LandingPage-SecondLogoText-pop 0.7s 2s forwards;
+  opacity: 0;
+}
+
+.fadeInEffect{
+  position: absolute;
+  top: 0; bottom: 0; right: -5%;
+  width: 105%;
+  animation: showFade 1.5s 0.7s forwards;
+  background: $backgroundColor;
+}
+
+.logo-image{
+  height: 8em;
+}
+
+@keyframes LandingPage-SecondLogoText-pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes showFade{
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }

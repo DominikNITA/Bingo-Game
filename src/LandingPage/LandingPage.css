@@ -1,4 +1,5 @@
-.Logo {
+@import url("https://fonts.googleapis.com/css?family=Kodchasan|Permanent+Marker");
+.logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,13 +13,92 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 80%;
+}
+
+.logo-text-container {
+  font-size: 5em;
+  line-height: 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .firstLogoText {
-  color: blue;
+  color: #688187;
+  font-family: 'Permanent Marker', cursive;
+  position: relative;
+  overflow: visible;
 }
 
 .secondLogoText {
-  color: red;
+  color: #454B49;
+  font-size: 0.80em;
+  text-align: right;
+  font-family: 'Kodchasan', sans-serif;
+  -webkit-animation: LandingPage-SecondLogoText-pop 0.7s 2s forwards;
+          animation: LandingPage-SecondLogoText-pop 0.7s 2s forwards;
+  opacity: 0;
+}
+
+.fadeInEffect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -5%;
+  width: 105%;
+  -webkit-animation: showFade 1.5s 0.7s forwards;
+          animation: showFade 1.5s 0.7s forwards;
+  background: #ddceae;
+}
+
+.logo-image {
+  height: 8em;
+}
+
+@-webkit-keyframes LandingPage-SecondLogoText-pop {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes LandingPage-SecondLogoText-pop {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showFade {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes showFade {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 /*# sourceMappingURL=LandingPage.css.map */

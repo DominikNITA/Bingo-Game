@@ -5,7 +5,7 @@
           box-sizing: border-box;
   max-width: 100vw;
   max-height: 100vh;
-  --logo-width: 35vmin;
+  --sign-width: 35vmin;
 }
 
 .App {
@@ -17,17 +17,20 @@
 
 .App-sign {
   position: absolute;
-  top: calc(100vh - var(--logo-width));
-  right: calc(-1 * var(--logo-width));
+  top: calc(100% - var(--sign-width));
+  right: calc(-1 * var(--sign-width));
   -webkit-animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
           animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
-  height: calc(2 * var(--logo-width));
+  height: calc(2 * var(--sign-width));
   pointer-events: none;
 }
 
-.App-header {
+.content {
   background-color: #ddceae;
   min-height: 100vh;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
