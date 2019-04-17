@@ -28,7 +28,7 @@
   font-size: 0.80em;
   text-align: right;
   font-family: 'Kodchasan', sans-serif;
-  animation: LandingPage-SecondLogoText-pop 0.7s 2s forwards;
+  animation: pop-animation 0.7s 2s forwards;
   opacity: 0;
 }
 
@@ -42,23 +42,6 @@
 
 .logo-image{
   height: 8em;
-}
-
-@keyframes LandingPage-SecondLogoText-pop {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes showFade{
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
+  animation: pop-animation 0.7s 0.7s forwards;
+  opacity: 0;
 }

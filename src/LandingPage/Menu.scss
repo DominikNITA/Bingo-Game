@@ -12,10 +12,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    opacity: 0;
+    user-select: none;
+    animation: pop-animation 0.7s 2.8s forwards;
 }
 
 .menu-item:hover{
-        color: $thirdColor;
+        color: $secondColor;
+        cursor: pointer;
         transition-delay: 10ms;
 }
 

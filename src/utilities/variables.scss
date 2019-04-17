@@ -1,4 +1,43 @@
 $firstColor:rgb(104, 129, 135);
 $secondColor:#454B49;
-$thirdColor: rgb(248, 239, 210);;
+$thirdColor: rgb(73, 114, 19);
+// $thirdColor: rgb(248, 239, 210);
+
 $backgroundColor: #ddceae;
+
+@keyframes pop-animation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes showFade{
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+
+  @keyframes App-sign-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes App-sign-appear {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }

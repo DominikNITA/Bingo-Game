@@ -14,6 +14,7 @@
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    background-color: $backgroundColor;
   }
 
   .App-sign {
@@ -27,7 +28,6 @@
   }
 
   .content {
-    background-color: $backgroundColor;
     min-height: 100vh;
     min-width: fit-content;
     display: flex;
@@ -44,20 +44,3 @@
     color: #61dafb;
   }
 
-  @keyframes App-sign-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes App-sign-appear {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }

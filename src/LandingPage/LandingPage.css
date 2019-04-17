@@ -1,4 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Kodchasan|Permanent+Marker");
+@-webkit-keyframes pop-animation {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes pop-animation {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showFade {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes showFade {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes App-sign-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-sign-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes App-sign-appear {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes App-sign-appear {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,8 +125,8 @@
   font-size: 0.80em;
   text-align: right;
   font-family: 'Kodchasan', sans-serif;
-  -webkit-animation: LandingPage-SecondLogoText-pop 0.7s 2s forwards;
-          animation: LandingPage-SecondLogoText-pop 0.7s 2s forwards;
+  -webkit-animation: pop-animation 0.7s 2s forwards;
+          animation: pop-animation 0.7s 2s forwards;
   opacity: 0;
 }
 
@@ -58,47 +143,8 @@
 
 .logo-image {
   height: 8em;
-}
-
-@-webkit-keyframes LandingPage-SecondLogoText-pop {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes LandingPage-SecondLogoText-pop {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes showFade {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
-}
-
-@keyframes showFade {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
+  -webkit-animation: pop-animation 0.7s 0.7s forwards;
+          animation: pop-animation 0.7s 0.7s forwards;
+  opacity: 0;
 }
 /*# sourceMappingURL=LandingPage.css.map */
