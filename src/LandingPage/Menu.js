@@ -14,9 +14,6 @@ class Menu extends Component {
         })
        return(
         <div className="menu">
-            {/* <MenuItem name="Intro"/>
-            <MenuItem name="Play"/>
-            <MenuItem name="About"/> */}
             {optionsList}
         </div>
         )

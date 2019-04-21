@@ -1,3 +1,4 @@
+@import url(g:\IT_Projects\WebDev\myapp\src\utilities\animate.css);
 @-webkit-keyframes pop-animation {
   from {
     -webkit-transform: scale(0);
@@ -9,7 +10,6 @@
     opacity: 1;
   }
 }
-
 @keyframes pop-animation {
   from {
     -webkit-transform: scale(0);
@@ -88,8 +88,8 @@
   position: absolute;
   top: calc(100% - 20vw);
   right: calc(-1 * 20vw);
-  -webkit-animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
-          animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
+  -webkit-animation: bounce 5s linear;
+          animation: bounce 5s linear;
   height: calc(2 * 20vw);
   pointer-events: none;
 }
@@ -107,5 +107,11 @@
 
 .left-banner {
   margin-right: 20px;
+}
+
+.about_footer {
+  position: absolute;
+  margin: 5px;
+  bottom: 0;
 }
 /*# sourceMappingURL=Background.css.map */

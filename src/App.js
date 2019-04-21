@@ -3,7 +3,7 @@ import './App.css';
 import Logo from './LandingPage/Logo';
 import Menu from './LandingPage/Menu';
 import RightBanner from './Background/RightBanner';
-import LeftBanner from './Background/LeftBanner';
+import LeftBanner from './Background/LeftBanner/LeftBanner';
 
 class App extends Component {
   render() {
