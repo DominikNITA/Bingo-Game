@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
-import Logo from './LandingPage/Logo';
-import Menu from './LandingPage/Menu';
 import RightBanner from './Background/RightBanner';
 import LeftBanner from './Background/LeftBanner/LeftBanner';
+import { BrowserRouter, Route} from 'react-router-dom';
+import LandingPage from './LandingPage/LandingPage';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <LeftBanner/>
-        <div className="content">
-          <Logo/>
-          <Menu/>
+      <BrowserRouter>
+        <div className="App">
+          <LeftBanner/>
+          <div className='content'>
+            <Route exact path='/' component={LandingPage}/>
+            <Route path="/play" component={null}/>
+            <Route path="/options" component={null}/>
+            <Route path="/about" component={null}/>
+            <Route path="/stack" component={null}/>
+            <Route path="/intro" component={null}/>
+          </div>
+          <RightBanner/>
         </div>
-        <RightBanner/>
-      </div>
+      </BrowserRouter>
     );
   }
 }

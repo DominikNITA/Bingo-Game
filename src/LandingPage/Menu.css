@@ -112,6 +112,11 @@
           animation: pop-animation 0.7s 2.8s forwards;
 }
 
+.menu-item a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .menu-item:hover {
   color: #454B49;
   cursor: pointer;

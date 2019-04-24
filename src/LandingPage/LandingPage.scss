@@ -45,3 +45,11 @@
   animation: pop-animation 0.7s 0.7s forwards;
   opacity: 0;
 }
+
+#landing-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
