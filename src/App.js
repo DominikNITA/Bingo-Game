@@ -11,7 +11,8 @@ import Options from './OptionsPage/Options';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      //basename necessary for github pages
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <LeftBanner/>
           <div className='content'>
