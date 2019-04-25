@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/Bingo-Game/static/js/runtime~main.701e1beb.js"
   },
   {
-    "revision": "fa9af3cb63b2406f198d",
-    "url": "/Bingo-Game/static/js/main.e2d3c5d9.chunk.js"
+    "revision": "b245e0563f3df85a758e",
+    "url": "/Bingo-Game/static/js/main.f33cee86.chunk.js"
   },
   {
-    "revision": "72b81a29858e43b094ba",
-    "url": "/Bingo-Game/static/js/2.2d90e0d3.chunk.js"
+    "revision": "85cfe523e5785e54848a",
+    "url": "/Bingo-Game/static/js/2.fd02573f.chunk.js"
   },
   {
-    "revision": "fa9af3cb63b2406f198d",
-    "url": "/Bingo-Game/static/css/main.0a8a6000.chunk.css"
+    "revision": "b245e0563f3df85a758e",
+    "url": "/Bingo-Game/static/css/main.41ba5783.chunk.css"
   },
   {
-    "revision": "7dc16715e653a55cee83e25d38325266",
+    "revision": "e4ccb9bf69edb711a6cc19c1bc775f64",
     "url": "/Bingo-Game/index.html"
   }
 ];
