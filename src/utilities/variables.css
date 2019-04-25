@@ -1,4 +1,4 @@
-@-webkit-keyframes pop-animation {
+@-webkit-keyframes pop-transition {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -10,7 +10,7 @@
   }
 }
 
-@keyframes pop-animation {
+@keyframes pop-transition {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);

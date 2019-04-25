@@ -4,7 +4,7 @@ $thirdColor: rgb(73, 114, 19);
 $backgroundColor: #ddceae;
 $bannerWidth: 20vw;
 
-@keyframes pop-animation {
+@keyframes pop-transition {
     from {
       transform: scale(0);
     }

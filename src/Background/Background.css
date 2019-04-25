@@ -1,4 +1,4 @@
-@-webkit-keyframes pop-animation {
+@-webkit-keyframes pop-transition {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -10,7 +10,7 @@
   }
 }
 
-@keyframes pop-animation {
+@keyframes pop-transition {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -84,14 +84,29 @@
   }
 }
 
+body {
+  --playState: running;
+  --toggle: 0;
+}
+
 .sign {
+  --sign-appear-duration: 1s;
+  pointer-events: none;
+  height: inherit;
+  -webkit-animation: App-sign-spin infinite 20s linear, App-sign-appear calc(var(--toggle) * var(--sign-appear-duration));
+          animation: App-sign-spin infinite 20s linear, App-sign-appear calc(var(--toggle) * var(--sign-appear-duration));
+  -webkit-animation-delay: calc(var(--toggle) * var(--sign-appear-duration)), 0s;
+          animation-delay: calc(var(--toggle) * var(--sign-appear-duration)), 0s;
+  -webkit-animation-play-state: var(--playState), running;
+          animation-play-state: var(--playState), running;
+}
+
+.sign-wrapper {
   position: absolute;
   top: calc(100% - 20vw);
   right: calc(-1 * 20vw);
-  -webkit-animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
-          animation: App-sign-spin infinite 20s linear 1s, App-sign-appear 1s;
   height: calc(2 * 20vw);
-  pointer-events: none;
+  width: calc(2 * 20vw);
 }
 
 .right-banner, .left-banner {

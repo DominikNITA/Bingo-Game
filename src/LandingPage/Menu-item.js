@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.css';
-import {Link, NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {OptionEnum} from './../utilities/enums.js';
 
 const MenuItem = (props) =>{

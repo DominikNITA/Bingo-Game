@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import './App.css';
 import RightBanner from './Background/RightBanner';
 import LeftBanner from './Background/LeftBanner/LeftBanner';
 import { BrowserRouter, Route} from 'react-router-dom';
 import LandingPage from './LandingPage/LandingPage';
+import Play from '../src/PlayPage/Play';
+import Options from './OptionsPage/Options';
 
 class App extends Component {
   render() {
@@ -13,8 +16,8 @@ class App extends Component {
           <LeftBanner/>
           <div className='content'>
             <Route exact path='/' component={LandingPage}/>
-            <Route path="/play" component={null}/>
-            <Route path="/options" component={null}/>
+            <Route path="/play" component={Play}/>
+            <Route path="/options" component={Options}/>
             <Route path="/about" component={null}/>
             <Route path="/stack" component={null}/>
             <Route path="/intro" component={null}/>

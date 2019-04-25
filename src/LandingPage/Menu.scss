@@ -1,4 +1,6 @@
 @import "../../src/utilities/variables.scss";
+@import "../../src/utilities/options.scss";
+
 
 .menu{
     color: $firstColor;
@@ -14,7 +16,7 @@
     align-items: center;
     opacity: 0;
     user-select: none;
-    animation: pop-animation 0.7s 2.8s forwards;
+    animation: pop-transition calc(var(--toggle) * 0.7s) calc(var(--toggle) * 2.8s) forwards;
     & a{
         text-decoration: inherit;
         color: inherit;

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Kodchasan|Permanent+Marker");
-@-webkit-keyframes pop-animation {
+@-webkit-keyframes pop-transition {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -10,7 +10,7 @@
     opacity: 1;
   }
 }
-@keyframes pop-animation {
+@keyframes pop-transition {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -124,8 +124,8 @@
   font-size: 0.80em;
   text-align: right;
   font-family: 'Kodchasan', sans-serif;
-  -webkit-animation: pop-animation 0.7s 2s forwards;
-          animation: pop-animation 0.7s 2s forwards;
+  -webkit-animation: pop-transition calc(var(--toggle) * 0.7s) calc(var(--toggle) * 2s) forwards;
+          animation: pop-transition calc(var(--toggle) * 0.7s) calc(var(--toggle) * 2s) forwards;
   opacity: 0;
 }
 
@@ -135,15 +135,15 @@
   bottom: 0;
   right: -5%;
   width: 105%;
-  -webkit-animation: showFade 1.5s 0.7s forwards;
-          animation: showFade 1.5s 0.7s forwards;
+  -webkit-animation: showFade calc(var(--toggle) * 1.5s) calc(var(--toggle) * 0.7s) forwards;
+          animation: showFade calc(var(--toggle) * 1.5s) calc(var(--toggle) * 0.7s) forwards;
   background: #ddceae;
 }
 
 .logo-image {
   height: 8em;
-  -webkit-animation: pop-animation 0.7s 0.7s forwards;
-          animation: pop-animation 0.7s 0.7s forwards;
+  -webkit-animation: pop-transition calc(var(--toggle) * 0.7s) calc(var(--toggle) * 0.7s) forwards;
+          animation: pop-transition calc(var(--toggle) * 0.7s) calc(var(--toggle) * 0.7s) forwards;
   opacity: 0;
 }
 

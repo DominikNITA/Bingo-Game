@@ -1,13 +1,23 @@
 @import "../../src/utilities/variables.scss";
+@import "../../src/utilities/options.scss";
 
 .sign {
-    $sign-appear-duration: 1s;
+    --sign-appear-duration: 1s;
+    pointer-events: none;
+    height: inherit;
+
+    animation: App-sign-spin infinite 20s linear, App-sign-appear calc(var(--toggle) * var(--sign-appear-duration));
+    animation-delay: calc(var(--toggle) * var(--sign-appear-duration)), 0s;
+    animation-play-state: var(--playState), running;
+
+}
+
+.sign-wrapper{
     position: absolute;
     top: calc(100% - #{$bannerWidth});
     right: calc(-1 * #{$bannerWidth});
-    animation: App-sign-spin infinite 20s linear $sign-appear-duration, App-sign-appear $sign-appear-duration;
     height: calc(2 * #{$bannerWidth});
-    pointer-events: none;
+    width: calc(2 * #{$bannerWidth});
 }
 
 .right-banner, .left-banner {
