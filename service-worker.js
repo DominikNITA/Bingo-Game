@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Bingo-Game/precache-manifest.4850ae813c3334ef1169f7876e52c6e8.js"
+  "/Bingo-Game/precache-manifest.23a83b956064064abbbf88efcbd969ec.js"
 );
 
 workbox.clientsClaim();
